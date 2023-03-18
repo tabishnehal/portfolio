@@ -1,0 +1,173 @@
+/* global stylings */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  width: auto;
+  text-transform: uppercase;
+  margin: 25px 25px 15px 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  transform: scale(1.25);
+  transition: .3s ease-in-out 0ms;
+}
+
+/* non-global stylings */
+
+#navbar {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: orangered;
+  z-index: 1;
+}
+
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > ul > li {
+  padding: 0 25px;
+}
+
+nav > ul > li > a {
+  font-size:large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+nav > ul > li:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+  width: 100vw;
+  height: 90vh;
+  margin-top: 10vh;
+}
+
+#welcome-section h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#welcome-section p {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#welcome-section a {
+  margin: 0;
+  margin-top: 5px;
+  padding-top: 8px;
+}
+
+#projects{
+  text-align: center;
+  padding: 5vh 0;
+  background: linear-gradient(
+    orangered,
+    green
+  );
+}
+
+#projects > h1 {
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 5vh auto;
+}
+
+.project-tile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  border: 5px solid black;
+  border-top: none;
+  border-radius: 15px;
+}
+
+.project-tile > p{
+  font-weight:600;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.code-and-deployment{
+  display: flex;
+}
+
+#contact {
+  width: 100vw;
+  padding: 10vh 0;
+  background: radial-gradient(
+    yellow,
+    black
+  );
+  text-align: center;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profiles > a {
+  padding: 5px 25px;
+}
+
+.profiles > a:hover {
+  transform: scale(0.90);
+  transition: 0.5s ease-in-out 0ms;
+}
+
+@media (max-width: 615px) {
+  #disappear-sm {
+    display: none;
+  }
+}
