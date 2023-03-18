@@ -27,11 +27,6 @@ a {
   padding: 5px;
 }
 
-.disabled {
-  pointer-events: none;
-  cursor: not-allowed;
-}
-
 .btn:hover {
   transform: scale(1.25);
   transition: .3s ease-in-out 0ms;
