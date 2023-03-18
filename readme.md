@@ -6,7 +6,7 @@
 ## [:link: Deployment Link](https://tabishnehal.github.io/portfolio)
 ---
 
-### CSS concepts learned :fire: and applied :setup: :
+### CSS concepts learned :fire: and applied :hammer_and_wrench:
  - CSS Flexbox
  - CSS Grid
  - CSS Transform
